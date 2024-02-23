@@ -4,17 +4,11 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Onboarding from './src/screens/Onboarding/Onboarding';
 import Splash from './src/screens/Splash/Splash';
+import RouteNavigator from './src/screens/RouteNavigator/RouteNavigator';
 
 const App = () => {
   const Stack = createStackNavigator();
-  return (
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Splash" component={Splash} />
-        <Stack.Screen name="Onboarding" component={Onboarding} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+  return <RouteNavigator />;
 };
 
 export default App;

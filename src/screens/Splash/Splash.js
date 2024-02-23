@@ -3,10 +3,20 @@ import React from 'react';
 
 const Splash = () => {
   return (
-    <View style={{flex: 1, backgroundColor: '#fff'}}>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: '#fff',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
       <Image
         source={require('../../assets/icons/image.png')}
-        style={{height: 100, width: 120, resizeMode: 'contain'}}
+        style={{
+          height: 100,
+          width: 120,
+          resizeMode: 'contain',
+        }}
       />
     </View>
   );
